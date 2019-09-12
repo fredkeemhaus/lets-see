@@ -2,7 +2,7 @@ import React from 'react';
 import { AppLoading } from 'expo'
 import * as Font from 'expo-font'
 import {Ionicons} from '@expo/vector-icons'
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import MainNavigation from './navigation/MainNavigation'
 
 export default class App extends React.Component {
@@ -24,9 +24,10 @@ export default class App extends React.Component {
     const { loaded } = this.state
     if (loaded) {
       return (
-      // <View style={styles.container}>
-        <MainNavigation />
-      // </View>
+        <>
+          <StatusBar barStyle = "light-content" />
+          <MainNavigation />
+        </>
     )
     } else {
       return <AppLoading startAsync={this.loadAssets} onFinish={this.handleLoaded} onError={this.handleError}/>
