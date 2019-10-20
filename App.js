@@ -5,6 +5,8 @@ import {Ionicons} from '@expo/vector-icons'
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import MainNavigation from './navigation/MainNavigation'
 
+
+
 export default class App extends React.Component {
   state = {
     loaded: false

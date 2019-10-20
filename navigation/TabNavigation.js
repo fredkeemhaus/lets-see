@@ -3,8 +3,8 @@ import { Platform } from "react-native";
 import { createAppContainer } from "react-navigation";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 
-import TVScreen from "../screens/TV";
-import MoviesScreen from "../screens/Movies";
+import TVScreen from "../screens/TV/TVPresenter";
+import MoviesScreen from "../screens/Movies/MoviesContainer";
 import SearchScreen from "../screens/Search";
 import { BG_COLOR } from "../constants/Colors";
 import TabBarIcon from "../components/TabBarIcon";
